@@ -7,7 +7,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
 # === ⚙️ 配置区域 ===
-API_KEY = "sk-xum38EBAt63xNazfc0JfriPyLz1Ue9A0rPWCqUK75AHyAN5v" 
+API_KEY = st.secrets["API_KEY"] 
 BASE_URL = "https://api.242243.xyz/v1"
 DB_PATH = "./db_chroma"
 MODEL_NAME = "[官转2] gemini-3-pro"
